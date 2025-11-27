@@ -1,0 +1,64 @@
+{
+    "latex-workshop.view.pdf.viewer": "tab",
+    "latex-workshop.view.pdf.invert": 0,
+    "latex-workshop.latex.autoBuild.run": "onSave",
+    "latex-workshop.latex.autoBuild.cleanAndRetry.enabled": true,
+    "latex-workshop.synctex.afterBuild.enabled": true,
+    "latex-workshop.latex.tools": [
+        {
+            "name": "latexmk",
+            "command": "latexmk",
+            "args": ["-r", "%WORKSPACE_FOLDER%/.latexmkrc", "-cd", "%DOC_EXT%", "-synctex=1"]
+        }
+    ],
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "lualatex",
+            "tools": [
+                "latexmk"
+            ]
+        }
+    ],
+    "files.exclude": {
+        "**/.git": true,
+        "**/.svn": true,
+        "**/.hg": true,
+        "**/CVS": true,
+        "**/.DS_Store": true,
+        "**/Thumbs.db": true,
+        "**/*.dvi": true,
+        "**/*.aux": true,
+        "**/*.fls": true,
+        "**/*.atfi": true,
+        "**/*.nav": true,
+        "**/*.snm": true,
+        "**/*.toc": true,
+        "**/*.asv": true,
+        "**/*.stderr": true,
+        "**/*.stdout": true,
+        "**/_minted-*/": true,
+        "**/_markdown_*/": true,
+        "**/pythontex-files-*/": true,
+        "**/*.pytxcode": true,
+        "**/*.markdown.in": true,
+        "**/*.markdown.lua": true,
+        "**/*.fdb_latexmk": true,
+        "**/*.synctex.gz": true,
+        "**/*.synctex(busy)": true,
+        "**/__latexindent_temp.tex": true,
+        "**/*.pyg": true,
+        "**/*.log": true,
+        "**/*.out": true,
+        "**/*.bbl": true,
+        "**/*.blg": true,
+        "**/*.bcf": true,
+        "**/*-blx.bib": true,
+        "**/*.run.xml": true,
+        "**/*.texmfcache": true,
+        "**/svg-inkscape*": true
+    },
+    "files.associations": {
+        ".latexmkrc": "perl",
+    },
+    
+}
